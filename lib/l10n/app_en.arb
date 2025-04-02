@@ -1,0 +1,9 @@
+{
+    "@@locale": "en",
+    "convert": "Convert",
+    "@convert": {},
+    "encrypt": "Encryt",
+    "@encrypt": {},
+    "decrypt": "Decrypt",
+    "@decrypt": {}
+}

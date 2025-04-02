@@ -1,3 +1,5 @@
+import 'package:crittoutil/screens/home_screen.dart';
+import 'package:crittoutil/src/generated/i18n/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,10 +14,29 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Critto Util',
+      themeMode: ThemeMode.system,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.pink,
+          primary: Colors.blueGrey,
+          primaryContainer: Colors.blueGrey.shade100,
+          secondaryContainer: Colors.grey.shade100,
+        ),
       ),
-      home: Container(child: Text("Work in progress")),
+      darkTheme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.pink,
+          primary: Colors.blueGrey.shade900,
+          primaryContainer: Colors.blueGrey.shade800,
+          secondaryContainer: Colors.black,
+        ),
+        textTheme: TextTheme(bodyMedium: TextStyle(color: Colors.white)),
+      ),
+
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
     );
   }
 }
