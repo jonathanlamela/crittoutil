@@ -21,11 +21,7 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.start,
           spacing: 16,
-          children: [
-            ConverterButton(onClick: () {}),
-            EncryptButton(onClick: () {}),
-            DecryptButton(onClick: () {}),
-          ],
+          children: [ConverterButton(), EncryptButton(), DecryptButton()],
         ),
       ),
     );

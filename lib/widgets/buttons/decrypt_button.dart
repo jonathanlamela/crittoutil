@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class DecryptButton extends StatelessWidget {
-  final Function onClick;
-
-  const DecryptButton({super.key, required this.onClick});
+  const DecryptButton({super.key});
 
   @override
   Widget build(BuildContext context) {

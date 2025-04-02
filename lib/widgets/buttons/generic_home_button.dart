@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class GenericHomeButton extends StatelessWidget {
-  final Function onClick;
+  final Function() onClick;
   final Widget child;
 
   const GenericHomeButton({
