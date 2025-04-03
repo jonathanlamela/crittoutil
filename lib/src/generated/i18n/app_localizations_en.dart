@@ -9,11 +9,20 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get convert => 'Convert';
+  String get converter => 'Converter';
 
   @override
-  String get encrypt => 'Encryt';
+  String get converter_description => 'Convert to binary, Base64 and reverse';
 
   @override
-  String get decrypt => 'Decrypt';
+  String get encrypter => 'Encrypter';
+
+  @override
+  String get encrypter_description => 'Convert clear-text to ciphertext';
+
+  @override
+  String get decrypter => 'Decrypter';
+
+  @override
+  String get descripter_description => 'Convert cipher text to cleartext';
 }

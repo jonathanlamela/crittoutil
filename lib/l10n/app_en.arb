@@ -1,9 +1,15 @@
 {
     "@@locale": "en",
-    "convert": "Convert",
-    "@convert": {},
-    "encrypt": "Encryt",
-    "@encrypt": {},
-    "decrypt": "Decrypt",
-    "@decrypt": {}
+    "converter": "Converter",
+    "converter_description": "Convert to binary, Base64 and reverse",
+    "@converter_description": {},
+    "@converter": {},
+    "encrypter": "Encrypter",
+    "encrypter_description": "Convert clear-text to ciphertext",
+    "@encrypter_description": {},
+    "@encrypter": {},
+    "decrypter": "Decrypter",
+    "@decrypter": {},
+    "descripter_description": "Convert cipher text to cleartext",
+    "@descripter_description": {}
 }

@@ -9,11 +9,20 @@ class AppLocalizationsIt extends AppLocalizations {
   AppLocalizationsIt([String locale = 'it']) : super(locale);
 
   @override
-  String get convert => 'Converti';
+  String get converter => 'Convertitore';
 
   @override
-  String get encrypt => 'Cifra';
+  String get converter_description => 'Converti in binario, Base64 e viceversa';
 
   @override
-  String get decrypt => 'Decifra';
+  String get encrypter => 'Cittografia';
+
+  @override
+  String get encrypter_description => 'Converti testo in chiaro in testo cifrato';
+
+  @override
+  String get decrypter => 'Decrittografia';
+
+  @override
+  String get descripter_description => 'Converti testo cifrato in testo in chiaro';
 }

@@ -95,23 +95,41 @@ abstract class AppLocalizations {
     Locale('it')
   ];
 
-  /// No description provided for @convert.
+  /// No description provided for @converter.
   ///
   /// In en, this message translates to:
-  /// **'Convert'**
-  String get convert;
+  /// **'Converter'**
+  String get converter;
 
-  /// No description provided for @encrypt.
+  /// No description provided for @converter_description.
   ///
   /// In en, this message translates to:
-  /// **'Encryt'**
-  String get encrypt;
+  /// **'Convert to binary, Base64 and reverse'**
+  String get converter_description;
 
-  /// No description provided for @decrypt.
+  /// No description provided for @encrypter.
   ///
   /// In en, this message translates to:
-  /// **'Decrypt'**
-  String get decrypt;
+  /// **'Encrypter'**
+  String get encrypter;
+
+  /// No description provided for @encrypter_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Convert clear-text to ciphertext'**
+  String get encrypter_description;
+
+  /// No description provided for @decrypter.
+  ///
+  /// In en, this message translates to:
+  /// **'Decrypter'**
+  String get decrypter;
+
+  /// No description provided for @descripter_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Convert cipher text to cleartext'**
+  String get descripter_description;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

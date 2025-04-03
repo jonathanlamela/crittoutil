@@ -1,3 +1,6 @@
+import 'package:crittoutil/screens/converter_screen.dart';
+import 'package:crittoutil/screens/decrypter_screen.dart';
+import 'package:crittoutil/screens/encrypter_screen.dart';
 import 'package:crittoutil/screens/home_screen.dart';
 import 'package:crittoutil/src/generated/i18n/app_localizations.dart';
 import 'package:flutter/material.dart';
@@ -37,6 +40,28 @@ class MyApp extends StatelessWidget {
       supportedLocales: AppLocalizations.supportedLocales,
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
+      initialRoute: "/",
+      onGenerateRoute: (settings) {
+        if (settings.name == '/converter') {
+          return MaterialPageRoute(
+            builder: (context) => const ConverterScreen(),
+          );
+        }
+
+        if (settings.name == '/encrypter') {
+          return MaterialPageRoute(
+            builder: (context) => const EncrypterScreen(),
+          );
+        }
+
+        if (settings.name == '/decrypter') {
+          return MaterialPageRoute(
+            builder: (context) => const DecrypterScreen(),
+          );
+        }
+
+        return MaterialPageRoute(builder: (context) => const HomeScreen());
+      },
     );
   }
 }

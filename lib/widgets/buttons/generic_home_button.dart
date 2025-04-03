@@ -31,7 +31,9 @@ class GenericHomeButton extends StatelessWidget {
         child: InkWell(
           borderRadius: BorderRadius.all(Radius.circular(8)),
           splashColor: Colors.grey,
-          onTap: () {},
+          onTap: () {
+            onClick();
+          },
           child: Padding(padding: EdgeInsets.only(left: 16), child: child),
         ),
       ),

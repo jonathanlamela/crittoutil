@@ -1,6 +1,9 @@
 {
     "@@locale": "it",
-    "convert": "Converti",
-    "encrypt": "Cifra",
-    "decrypt": "Decifra"
+    "converter": "Convertitore",
+    "encrypter": "Cittografia",
+    "decrypter": "Decrittografia",
+    "converter_description": "Converti in binario, Base64 e viceversa",
+    "encrypter_description": "Converti testo in chiaro in testo cifrato",
+    "descripter_description": "Converti testo cifrato in testo in chiaro"
 }
