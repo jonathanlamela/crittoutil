@@ -1,4 +1,5 @@
 import 'package:crittoutil/src/generated/i18n/app_localizations.dart';
+import 'package:crittoutil/widgets/forms/converter_form.dart';
 import 'package:flutter/material.dart';
 
 class ConverterScreen extends StatelessWidget {
@@ -16,7 +17,7 @@ class ConverterScreen extends StatelessWidget {
         foregroundColor: Colors.white,
       ),
       backgroundColor: Theme.of(context).colorScheme.primaryContainer,
-      body: Container(),
+      body: Container(padding: EdgeInsets.all(16), child: ConverterForm()),
     );
   }
 }

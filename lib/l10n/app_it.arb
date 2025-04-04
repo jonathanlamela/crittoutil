@@ -5,5 +5,16 @@
     "decrypter": "Decrittografia",
     "converter_description": "Converti in binario, Base64 e viceversa",
     "encrypter_description": "Converti testo in chiaro in testo cifrato",
-    "descripter_description": "Converti testo cifrato in testo in chiaro"
+    "descripter_description": "Converti testo cifrato in testo in chiaro",
+    "convert_btn": "Converti",
+    "input_type_label": "Converti da",
+    "output_type_label": "Converti in",
+    "text_format": "Testo",
+    "binary_format": "Binario",
+    "base64_format": "Base64",
+    "input_label": "Input",
+    "output_label": "Risultato",
+    "empty_field_error": "Il campo non può essere vuoto",
+    "no_valid_binary": "Valore binario non valido",
+    "no_valid_base64": "Valore Base64 non valido"
 }

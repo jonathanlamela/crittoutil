@@ -25,4 +25,37 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get descripter_description => 'Converti testo cifrato in testo in chiaro';
+
+  @override
+  String get convert_btn => 'Converti';
+
+  @override
+  String get input_label => 'Input';
+
+  @override
+  String get output_label => 'Risultato';
+
+  @override
+  String get input_type_label => 'Converti da';
+
+  @override
+  String get output_type_label => 'Converti in';
+
+  @override
+  String get text_format => 'Testo';
+
+  @override
+  String get binary_format => 'Binario';
+
+  @override
+  String get base64_format => 'Base64';
+
+  @override
+  String get empty_field_error => 'Il campo non può essere vuoto';
+
+  @override
+  String get no_valid_binary => 'Valore binario non valido';
+
+  @override
+  String get no_valid_base64 => 'Valore Base64 non valido';
 }

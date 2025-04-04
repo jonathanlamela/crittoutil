@@ -130,6 +130,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Convert cipher text to cleartext'**
   String get descripter_description;
+
+  /// No description provided for @convert_btn.
+  ///
+  /// In en, this message translates to:
+  /// **'Convert'**
+  String get convert_btn;
+
+  /// No description provided for @input_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Input'**
+  String get input_label;
+
+  /// No description provided for @output_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Output'**
+  String get output_label;
+
+  /// No description provided for @input_type_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Convert from'**
+  String get input_type_label;
+
+  /// No description provided for @output_type_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Convert to'**
+  String get output_type_label;
+
+  /// No description provided for @text_format.
+  ///
+  /// In en, this message translates to:
+  /// **'Text'**
+  String get text_format;
+
+  /// No description provided for @binary_format.
+  ///
+  /// In en, this message translates to:
+  /// **'Binary'**
+  String get binary_format;
+
+  /// No description provided for @base64_format.
+  ///
+  /// In en, this message translates to:
+  /// **'Base64'**
+  String get base64_format;
+
+  /// No description provided for @empty_field_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Input field cannot be empty'**
+  String get empty_field_error;
+
+  /// No description provided for @no_valid_binary.
+  ///
+  /// In en, this message translates to:
+  /// **'Binary value is not valid'**
+  String get no_valid_binary;
+
+  /// No description provided for @no_valid_base64.
+  ///
+  /// In en, this message translates to:
+  /// **'Base64 value is not valid'**
+  String get no_valid_base64;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
