@@ -13,7 +13,9 @@ class DecrypterScreen extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: Container(),
+      body: const Center(
+        child: Text('Arriving soon', style: TextStyle(fontSize: 24)),
+      ),
     );
   }
 }
