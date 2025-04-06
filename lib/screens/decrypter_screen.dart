@@ -8,14 +8,11 @@ class DecrypterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.primary,
         title: Text(
           AppLocalizations.of(context)!.decrypter,
           style: TextStyle(color: Colors.white),
         ),
-        foregroundColor: Colors.white,
       ),
-      backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       body: Container(),
     );
   }

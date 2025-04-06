@@ -23,23 +23,42 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.grey,
           primary: Colors.blueGrey,
-          primaryContainer: Colors.white,
+          primaryContainer: Colors.grey.shade200,
           secondaryContainer: Colors.grey.shade100,
+        ),
+        scaffoldBackgroundColor: Colors.grey.shade50,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.blueGrey.shade500,
+          foregroundColor: Colors.white,
+          titleTextStyle: TextStyle(color: Colors.black, fontSize: 20),
         ),
       ),
       darkTheme: ThemeData(
+        brightness: Brightness.dark,
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
+          brightness: Brightness.dark,
           seedColor: Colors.pink,
           primary: Colors.blueGrey.shade900,
           primaryContainer: Colors.blueGrey.shade800,
-          secondaryContainer: Colors.black,
+          secondaryContainer: Colors.blueGrey.shade700,
+          inversePrimary: Colors.blueGrey.shade500,
         ),
-        textTheme: TextTheme(
-          bodyMedium: TextStyle(color: Colors.white),
-          titleMedium: TextStyle(color: Colors.white),
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.blueGrey.shade500,
+          foregroundColor: Colors.white,
+          titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
         ),
 
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            foregroundColor: Colors.white,
+            backgroundColor: Colors.blueGrey.shade500,
+            padding: EdgeInsets.all(16),
+            textStyle: TextStyle(fontSize: 16),
+          ),
+        ),
+        scaffoldBackgroundColor: Colors.blueGrey.shade900,
         inputDecorationTheme: InputDecorationTheme(
           labelStyle: TextStyle(color: Colors.white),
           hintStyle: TextStyle(color: Colors.white),
@@ -69,6 +88,7 @@ class MyApp extends StatelessWidget {
 
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
+      locale: const Locale('en', ''),
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
       initialRoute: "/",
