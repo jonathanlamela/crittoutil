@@ -17,23 +17,54 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Critto Util',
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.dark,
       theme: ThemeData(
+        useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.pink,
+          seedColor: Colors.grey,
           primary: Colors.blueGrey,
-          primaryContainer: Colors.blueGrey.shade100,
+          primaryContainer: Colors.white,
           secondaryContainer: Colors.grey.shade100,
         ),
       ),
       darkTheme: ThemeData(
+        useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.pink,
           primary: Colors.blueGrey.shade900,
           primaryContainer: Colors.blueGrey.shade800,
           secondaryContainer: Colors.black,
         ),
-        textTheme: TextTheme(bodyMedium: TextStyle(color: Colors.white)),
+        textTheme: TextTheme(
+          bodyMedium: TextStyle(color: Colors.white),
+          titleMedium: TextStyle(color: Colors.white),
+        ),
+
+        inputDecorationTheme: InputDecorationTheme(
+          labelStyle: TextStyle(color: Colors.white),
+          hintStyle: TextStyle(color: Colors.white),
+          enabledBorder: UnderlineInputBorder(
+            borderSide: BorderSide(color: Colors.white),
+          ),
+          focusedBorder: UnderlineInputBorder(
+            borderSide: BorderSide(color: Colors.white),
+          ),
+          border: UnderlineInputBorder(
+            borderSide: BorderSide(color: Colors.white),
+          ),
+          errorBorder: UnderlineInputBorder(
+            borderSide: BorderSide(color: Colors.red),
+          ),
+          focusedErrorBorder: UnderlineInputBorder(
+            borderSide: BorderSide(color: Colors.red),
+          ),
+          disabledBorder: UnderlineInputBorder(
+            borderSide: BorderSide(color: Colors.white),
+          ),
+          errorStyle: TextStyle(color: Colors.red),
+          floatingLabelStyle: TextStyle(color: Colors.white),
+          focusColor: Colors.white,
+        ),
       ),
 
       localizationsDelegates: AppLocalizations.localizationsDelegates,

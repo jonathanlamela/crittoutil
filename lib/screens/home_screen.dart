@@ -2,6 +2,7 @@ import 'package:crittoutil/widgets/buttons/converter_button.dart';
 import 'package:crittoutil/widgets/buttons/decrypt_button.dart';
 import 'package:crittoutil/widgets/buttons/encrypt_button.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,10 +10,6 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("CrittoUtil", style: TextStyle(color: Colors.white)),
-        backgroundColor: Theme.of(context).colorScheme.primary,
-      ),
       backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       body: Container(
         padding: EdgeInsets.all(16),
@@ -21,7 +18,18 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.start,
           spacing: 16,
-          children: [ConverterButton(), EncryptButton(), DecryptButton()],
+          children: [
+            Padding(
+              padding: EdgeInsets.all(16),
+              child: Text(
+                "CrittoUtil",
+                style: GoogleFonts.aBeeZee(fontSize: 32),
+              ),
+            ),
+            ConverterButton(),
+            EncryptButton(),
+            DecryptButton(),
+          ],
         ),
       ),
     );
