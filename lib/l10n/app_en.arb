@@ -33,5 +33,7 @@
     "no_valid_binary": "Binary value is not valid",
     "@no_valid_binary": {},
     "no_valid_base64": "Base64 value is not valid",
-    "@no_valid_base64": {}
+    "@no_valid_base64": {},
+    "pick_alg": "Pick one algorithm",
+    "@pick_alg": {}
 }

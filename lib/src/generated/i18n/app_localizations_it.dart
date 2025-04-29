@@ -58,4 +58,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get no_valid_base64 => 'Valore Base64 non valido';
+
+  @override
+  String get pick_alg => 'Seleziona un algoritmo';
 }

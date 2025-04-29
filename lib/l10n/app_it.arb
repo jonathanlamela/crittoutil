@@ -16,5 +16,7 @@
     "output_label": "Risultato",
     "empty_field_error": "Il campo non può essere vuoto",
     "no_valid_binary": "Valore binario non valido",
-    "no_valid_base64": "Valore Base64 non valido"
+    "no_valid_base64": "Valore Base64 non valido",
+    "pick_alg": "Seleziona un algoritmo",
+    "@pick_alg": {}
 }

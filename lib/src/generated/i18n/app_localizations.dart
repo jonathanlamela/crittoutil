@@ -196,6 +196,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Base64 value is not valid'**
   String get no_valid_base64;
+
+  /// No description provided for @pick_alg.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick one algorithm'**
+  String get pick_alg;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
