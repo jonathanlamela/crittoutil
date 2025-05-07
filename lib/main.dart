@@ -1,8 +1,10 @@
+import 'package:crittoutil/screens/choose_encrypter_screen.dart';
 import 'package:crittoutil/screens/converter_screen.dart';
 import 'package:crittoutil/screens/decrypter_screen.dart';
 import 'package:crittoutil/screens/encrypter_screen.dart';
 import 'package:crittoutil/screens/home_screen.dart';
 import 'package:crittoutil/src/generated/i18n/app_localizations.dart';
+import 'package:crittoutil/types/encrypt_alg_type.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -99,9 +101,17 @@ class MyApp extends StatelessWidget {
           );
         }
 
+        if (settings.name == '/choose-encrypter') {
+          return MaterialPageRoute(
+            builder: (context) => const ChooseEncrypter(),
+          );
+        }
+
         if (settings.name == '/encrypter') {
           return MaterialPageRoute(
-            builder: (context) => const EncrypterScreen(),
+            builder:
+                (context) =>
+                    EncrypterScreen(algChoosen: settings.arguments! as AlgType),
           );
         }
 

@@ -9,7 +9,7 @@ class EncryptButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GenericHomeButton(
       onClick: () {
-        Navigator.pushNamed(context, "/encrypter");
+        Navigator.pushNamed(context, "/choose-encrypter");
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
